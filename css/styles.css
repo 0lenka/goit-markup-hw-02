@@ -6,6 +6,7 @@
   --secondary-backgroung-color: #2f303a;
   --backgroung-color: #f5f4fa;
   --accent-color: #2196f3;
+  --accent-color-hover: #188ce8;
   --contacts-footer-color: rgba(255, 255, 255, 0.6);
 }
 
@@ -21,6 +22,10 @@
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.nav .part {
+  color: var(--primary-text-color);
 }
 .site-nav {
   list-style: none;
@@ -102,10 +107,15 @@
 .order {
   background-color: var(--accent-color);
   color: var(--text-color);
-  cursor: pointer;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+  cursor: pointer;
+}
+.order:hover,
+.order:focus {
+  background-color: var(--accent-color-hover);
 }
 .list {
   list-style: none;
@@ -140,13 +150,18 @@
   text-decoration: none;
 }
 /* PORTFOLIO */
+.link.current {
+  color: var(--accent-color);
+}
 .projects-filter {
   background-color: var(--primary-backgrong-color);
 }
+
 .filter-button {
   background-color: var(--backgroung-color);
   color: var(--primary-text-color);
   cursor: pointer;
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -165,4 +180,7 @@
 .our-projects .text {
   font-size: 16px;
   line-height: 1.9;
+}
+.footer-part {
+  color: var(--text-color);
 }
